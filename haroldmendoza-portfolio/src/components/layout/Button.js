@@ -6,7 +6,7 @@ const Button = () => {
   let menuBar = useRef(null);
   useEffect(() => {
     let time1 = new TimelineMax({ paused: true });
-    time1.to(".overlay", 1, {
+    time1.to(menuBar, 1, {
       top: 0,
       ease: Expo.easeInOut
     });
