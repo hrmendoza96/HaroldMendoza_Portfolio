@@ -1,6 +1,9 @@
 import React, { useRef, useEffect } from "react";
 import { TimelineMax, Expo } from "gsap";
+import CSSPlugin from "gsap/CSSPlugin";
 import $ from "jquery";
+
+const C = CSSPlugin;
 
 const Button = () => {
   let menuBar = useRef(null);
